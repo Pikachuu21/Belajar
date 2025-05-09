@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Company Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg mt-4">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Glad2Glow</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div class="navbar-nav">
+          <a class="nav-link active me-4" href="#">HOME</a>
+          <a class="nav-link me-4" href="#about">ABOUT</a>
+          <a class="nav-link me-4" href="#products">PRODUCTS</a>
+          <a class="nav-link me-4" href="#contact">CONTACT</a>
+          <!-- TOMBOL DARK MODE -->
+          <button id="darkModeToggle" class="btn btn-outline-secondary ms-3">Dark Mode</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="py-5 text-center" >
+    <div class="container" >
+      <img src="img/heroo.jpg" alt="Glad2Glow" class="img-fluid mb-4" style="max-width: 65%;">
+      <h1 class="fw-bold mb-3">Welcome to Glad2Glow</h1>
+      <p>Your trusted partner for glowing and healthy skin.</p>
+      <button class="btn btn-custom1">Explore Now</button>
+      
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 text-center">
+    <div class="container">
+      <h2 class="fw-bold">About Us</h2>
+      <p class="mt-4"><p class="mt-4">Glad2Glow adalah merek kecantikan lokal yang lahir dari kecintaan terhadap keindahan alami dan keinginan untuk menghadirkan perawatan kulit berkualitas tinggi yang aman dan efektif. Kami percaya bahwa setiap orang berhak tampil percaya diri dengan kulit sehat dan bercahaya, tanpa harus mengorbankan kenyamanan dan keamanan.</p>
+      <p>Dengan menggabungkan bahan-bahan alami pilihan dan inovasi teknologi perawatan kulit modern, produk-produk kami diformulasikan secara khusus untuk merawat kulit dari dalam dan luar. Mulai dari krim pelembap, serum pencerah, hingga pembersih wajah lembut, setiap produk dirancang untuk memberikan hasil nyata dan tahan lama bagi semua jenis kulit.</p>
+      <p>Glad2Glow juga berkomitmen terhadap prinsip keberlanjutan dan etika-produk kami bebas dari uji coba terhadap hewan, ramah lingkungan, dan dikembangkan dengan standar kebersihan tinggi. Kami tidak hanya menjual produk, tetapi juga menawarkan gaya hidup yang mendukung perawatan diri, kecintaan terhadap diri sendiri, dan kepercayaan diri yang tumbuh dari dalam.</p>
+      <p>Bersama Glad2Glow, pancarkan keindahan alami kulitmu dan temukan kilau terbaik dari dirimu.</p>
+    </div>
+  </section>
+
+    <!-- Visi & Misi Section -->
+    <section id="vision-mission" class="py-5 text-center">
+      <div class="container">
+        <h2 class="fw-bold">Our Vission & Mission</h2>
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <h4 class="fw-bold">Our Vission</h4>
+            <p>Menjadi merek kecantikan terkemuka yang memberdayakan individu untuk merangkul kecantikan alami mereka dan meningkatkan rasa percaya diri melalui produk perawatan kulit yang aman, efektif, dan ramah lingkungan.</p>
+          </div>
+          <div class="col-md-6">
+            <h4 class="fw-bold">Our Mission</h4>
+            <p>Memberikan solusi perawatan kulit berkualitas tinggi yang menutrisi, meremajakan, dan melindungi kulit. Kami bertujuan untuk menciptakan produk yang berkelanjutan dan bebas kekejaman, sambil memberikan hasil yang nyata dan tahan lama.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  <!-- Product Section -->
+  <section id="products" class="py-5 text-center">
+    <div class="container">
+      <h2 class="fw-bold">Our Products</h2>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="product-card p-3">
+            <img src="img/cream1.jpg" class="img-fluid mb-3" alt="Cream">
+            <h5 class="fw-bold">Hydrating Cream</h5>
+            <p>Moisturize your skin with our natural formula.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="product-card p-3">
+            <img src="img/serum1.jpg" class="img-fluid mb-3" alt="Serum">
+            <h5 class="fw-bold">Vitamin C Serum</h5>
+            <p>Brighten and nourish your skin every day.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="product-card p-3">
+            <img src="img/cleanser1.jpg" class="img-fluid mb-3" alt="Cleanser">
+            <h5 class="fw-bold">Gentle Cleanser</h5>
+            <p>Cleanse your face without drying it out.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section id="video" class="py-5 text-center bg-light">
+    <div class="container">
+      <h2 class="fw-bold mb-4 fade-in-up">Our Journey</h2>
+      <video controls poster="img/video-thumbnail.jpg" style="max-width:100%; border-radius: 15px;">
+        <source src="video/Glad2Glow.mp4" type="video/mp4">
+     </video>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 text-center">
+    <div class="container">
+      <h2 class="fw-bold">Contact Us</h2>
+      <p class="mt-3">Get in touch with our team through Instagram or LinkedIn.</p>
+      <div>
+        <a href="https://www.instagram.com/glad2glow?utm_source=chatgpt.com" class="me-3"><img src="img/ig.jpg" alt="Instagram" style="width:40px;"></a>
+        <a href="https://www.linkedin.com/company/glad2glow/"><img src="img/in.jpg" alt="LinkedIn" style="width:40px;"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-custom text-center py-4">
+    <p class="mb-0">&copy; 2025 Glad2Glow. All rights reserved.</p>
+  </footer>
+
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  
+</body>
+</html>

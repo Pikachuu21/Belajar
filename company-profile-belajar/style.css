@@ -1,0 +1,290 @@
+/* style.css */
+#hero {
+  background-image: url ("img/hero.jpg") ; 
+  background-color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #332421; 
+  text-shadow: 0 4px 6px rgba(196, 195, 195, 0.4); 
+}
+
+#hero h1, #hero p, #hero button {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); 
+}
+
+@media (max-width: 768px) {
+  #hero img {
+    max-width: 100% !important;
+  }
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f5f4; 
+  color: #332421;
+}
+
+@media (max-width: 768px) {
+  h1, h2 {
+    font-size: 1.8rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+}
+
+.navbar {
+  background-color: #ffcad4; 
+  border-bottom: 2px solid #f5a6b7; 
+}
+.navbar .nav-link {
+  color: #332421 !important; 
+}
+.navbar-brand {
+  color: #332421;
+}
+.navbar .nav-link:hover {
+  color: #ffffff !important; 
+}
+
+#darkModeToggle {
+  background-color: #c05060;      
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+#darkModeToggle:hover {
+  background-color: #c05060;    
+}
+
+.btn-custom1 {
+  background-color: #f5a6b7;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom1:hover {
+  background-color: #e38ca2;
+}
+
+#contact {
+background-color: #ffffff;
+}
+
+#products {
+  background-color: #F9F5F4;
+  color: #333; }
+  
+.product-card {
+  border: 1px solid #f1d5da;
+  border-radius: 15px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
+}
+
+#video {
+  background-color: #ffffff !important; 
+  color: #332421;
+}
+
+#vision-mission {
+  background-color: #ffffff;
+  padding: 50px 0;
+}
+
+#vision-mission h2 {
+  font-size: 2.5rem;
+  color: #332421;
+  margin-bottom: 20px;
+}
+
+#vision-mission h4 {
+  color: #e79898; 
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+#vision-mission p {
+  font-size: 1rem;
+  color: #332421;
+  line-height: 1.6;
+  text-align: left;
+}
+
+#about p {
+  text-align: center;
+  line-height: 1.8;
+}
+
+#vision-mission p {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.fade-in-up {
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0; /* default state */
+}
+
+#contact {
+  background-color: #f9f5f4; 
+  color: #332421;
+}
+
+
+.footer-custom {
+  background-color: #ffffff;
+  color: #332421;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+
+
+
+/* === DARK MODE === */
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #e8e7e7;
+}
+
+/* Navbar dark mode */
+body.dark-mode .navbar {
+  background-color: #111010;
+  border-bottom: 2px solid #c2c0c0;
+}
+body.dark-mode .navbar-brand{
+  color: #f0f0f0 !important;
+}
+body.dark-mode .navbar .nav-link {
+  color: #f0f0f0 !important;
+}
+body.dark-mode .navbar .nav-link:hover {
+  color: #ffcad4 !important;
+}
+body.dark-mode .btn-outline-dark {
+  color: #f0f0f0;
+  border-color: #888;
+}
+body.dark-mode .btn-outline-dark:hover {
+  background-color: #ffcad4;
+  color: #1e1e1e;
+}
+
+/* Hero section dark mode */
+body.dark-mode #hero {
+  background-color: #1c1c1c;
+  color: #f0f0f0;
+}
+
+body.dark-mode.navbar-brand{
+  color: #fff;
+}
+
+/* Dark mode styling */
+body.dark-mode #darkModeToggle {
+  background-color: #444;
+  color: #f8f8f8;
+}
+
+/* Custom button in dark mode */
+body.dark-mode .btn-custom1 {
+  background-color: #444;
+  color: #fff;
+}
+body.dark-mode .btn-custom1:hover {
+  background-color: #666;
+}
+
+/* About section */
+body.dark-mode #about {
+  background-color: #222; 
+  color: #e0e0e0; 
+}
+body.dark-mode #about h2 {
+  color: #ffffff; 
+}
+body.dark-mode #about p {
+  color: #f0f0f0; 
+}
+
+
+/* Visi & Misi */
+body.dark-mode #vision-mission {
+  background-color: #1e1e1e;
+}
+body.dark-mode #vision-mission p,
+body.dark-mode #vision-mission h4 {
+  color: #f0f0f0;
+}
+body.dark-mode #vision-mission h2 {
+  color: #ffffff;
+}
+
+/* Product card */
+body.dark-mode .product-card {
+  background-color: #191919;
+  border: 1px solid #444;
+  color: #f0f0f0;
+}
+body.dark-mode #products {
+  background-color: #222;
+  color: #ffffff;
+}
+/* Section Video */
+body.dark-mode #video {
+  background-color: #1e1e1e !important; 
+  color: #f0f0f0;
+}
+
+
+body.dark-mode #video h2 {
+  color: #ffffff;
+}
+
+/* Contact section */
+body.dark-mode #contact {
+  background-color: #222;
+  color: #f0f0f0;
+  }
+
+/* Footer */
+body.dark-mode .footer-custom {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
